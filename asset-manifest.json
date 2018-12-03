@@ -1,13 +1,13 @@
 {
-  "main.css": "/ms2-dmg-calc/static/css/main.59dc5eee.chunk.css",
-  "main.js": "/ms2-dmg-calc/static/js/main.14a6bc66.chunk.js",
-  "main.js.map": "/ms2-dmg-calc/static/js/main.14a6bc66.chunk.js.map",
-  "static/js/1.97ae15fe.chunk.js": "/ms2-dmg-calc/static/js/1.97ae15fe.chunk.js",
-  "static/js/1.97ae15fe.chunk.js.map": "/ms2-dmg-calc/static/js/1.97ae15fe.chunk.js.map",
+  "main.css": "/ms2-dmg-calc/static/css/main.71587624.chunk.css",
+  "main.js": "/ms2-dmg-calc/static/js/main.b889c916.chunk.js",
+  "main.js.map": "/ms2-dmg-calc/static/js/main.b889c916.chunk.js.map",
+  "static/js/1.240ac256.chunk.js": "/ms2-dmg-calc/static/js/1.240ac256.chunk.js",
+  "static/js/1.240ac256.chunk.js.map": "/ms2-dmg-calc/static/js/1.240ac256.chunk.js.map",
   "runtime~main.js": "/ms2-dmg-calc/static/js/runtime~main.30991e42.js",
   "runtime~main.js.map": "/ms2-dmg-calc/static/js/runtime~main.30991e42.js.map",
-  "static/css/main.59dc5eee.chunk.css.map": "/ms2-dmg-calc/static/css/main.59dc5eee.chunk.css.map",
+  "static/css/main.71587624.chunk.css.map": "/ms2-dmg-calc/static/css/main.71587624.chunk.css.map",
   "index.html": "/ms2-dmg-calc/index.html",
-  "precache-manifest.14e5e01bbe82aea509f92de8d7d2654f.js": "/ms2-dmg-calc/precache-manifest.14e5e01bbe82aea509f92de8d7d2654f.js",
+  "precache-manifest.40ea75924ea7b8761bef091d5434474e.js": "/ms2-dmg-calc/precache-manifest.40ea75924ea7b8761bef091d5434474e.js",
   "service-worker.js": "/ms2-dmg-calc/service-worker.js"
 }
