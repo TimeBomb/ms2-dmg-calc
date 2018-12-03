@@ -6,8 +6,10 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { reducer } from './state/reducers';
+import { defaultState } from './util/constants';
 
-const store = createStore(reducer);
+const initialState = defaultState;
+const store = createStore(reducer, initialState);
 
 ReactDOM.render((
     <Provider store={store}>

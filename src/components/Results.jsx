@@ -1,9 +1,9 @@
 import { connect } from 'react-redux'
 import ResultsComponent from './ui/Results';
-import { getResults } from '../state/selectors';
+import { getPlayerStats } from '../state/selectors';
 
 const mapStateToProps = state => ({
-    stats: getResults(state),
+    playerStats: getPlayerStats(state),
 });
 
 export default connect(

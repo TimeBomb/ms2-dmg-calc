@@ -7,9 +7,5 @@ export const getComparisonPlayerStats = (state) => {
 };
 
 export const getPlayerStats = (state) => {
-    return state.stats;
-};
-
-export const getResults = (state) => {
-    return state.results;
+    return state.playerStats;
 };

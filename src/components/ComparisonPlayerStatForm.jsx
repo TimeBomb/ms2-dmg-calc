@@ -4,11 +4,11 @@ import { setComparisonPlayerStats } from '../state/actions';
 import { getComparisonPlayerStats } from '../state/selectors';
 
 const mapStateToProps = state => ({
-    stats: getComparisonPlayerStats(state),
+    values: getComparisonPlayerStats(state),
 });
 
 const mapDispatchToProps = dispatch => ({
-    setComparisonPlayerStats: stats => dispatch(setComparisonPlayerStats(stats)),
+    setStats: stats => dispatch(setComparisonPlayerStats(stats)),
 });
 
 export default connect(
