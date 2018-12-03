@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/ms2-dmg-calc/precache-manifest.53261966fd55fb36d6347221dce50391.js"
+  "/ms2-dmg-calc/precache-manifest.0d43c16a60e55a6a6fe74a65596ab186.js"
 );
 
 workbox.clientsClaim();
