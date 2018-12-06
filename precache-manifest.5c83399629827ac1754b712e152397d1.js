@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/ms2-dmg-calc/static/js/runtime~main.30991e42.js"
   },
   {
-    "revision": "386f85035a95254c44da",
-    "url": "/ms2-dmg-calc/static/js/main.386f8503.chunk.js"
+    "revision": "1ddf3c2b60faca17e538",
+    "url": "/ms2-dmg-calc/static/js/main.1ddf3c2b.chunk.js"
   },
   {
     "revision": "3ed49249e0fcf09d3477",
     "url": "/ms2-dmg-calc/static/js/1.3ed49249.chunk.js"
   },
   {
-    "revision": "386f85035a95254c44da",
+    "revision": "1ddf3c2b60faca17e538",
     "url": "/ms2-dmg-calc/static/css/main.f00b42cd.chunk.css"
   },
   {
-    "revision": "914a26f52fb8af84d495ebf7caf050ec",
+    "revision": "1b9e0111bc583bedb7ba59be5355bcbb",
     "url": "/ms2-dmg-calc/index.html"
   }
 ];
