@@ -1,14 +1,14 @@
 import { connect } from 'react-redux'
 import StatForm  from './ui/StatForm';
-import { setComparisonPlayerStats } from '../state/actions';
-import { getComparisonPlayerStats } from '../state/selectors';
+import { setComparisonStats } from '../state/actions';
+import { getComparisonStats } from '../state/selectors';
 
 const mapStateToProps = state => ({
-    values: getComparisonPlayerStats(state),
+    values: getComparisonStats(state),
 });
 
 const mapDispatchToProps = dispatch => ({
-    setStats: stats => dispatch(setComparisonPlayerStats(stats)),
+    setStats: stats => dispatch(setComparisonStats(stats)),
 });
 
 export default connect(

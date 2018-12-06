@@ -16,7 +16,46 @@ label {
     padding: 0 10px;
 }
 
-.results {
+.app {
+    margin: 10px auto;
+}
+
+.calc {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.calc .col > *,
+.calc .col > * {
+    flex: 1 100%;
+}
+
+.floating-footer {
+    position: sticky;
+    bottom: 0;
+    background: #FFF;
+    text-align: center;
     padding: 20px;
     font-size: 20px;
+}
+
+.reset-calc,
+.fineprint {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
+
+.reset-calc {
+    margin-top: 40px;
+}
+
+.fineprint {
+    font-size: 10px;
+    font-style: italic;
+}
+
+.comparison-type {
+    text-align: center;
 }

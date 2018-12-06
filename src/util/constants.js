@@ -1,19 +1,74 @@
 export const defaultState = {
-    playerStats: {
-        class: 'knight',
-        dungeon: 'cdev',
-        wepAtk: 2000,
-        bAtk: 0,
-        pbAtk: 0,
-        wepRarity: 'epic',
-        pierce: 5,
-        pmPierce: 5,
-        pmAtk: 300,
-        tDmg: 0,
-        bDmg: 0,
-        eDmg: 0,
-        mrDmg: 0,
+    player: {
+        stats: {
+            class: 'knight',
+            dungeon: 'cdev',
+            wepAtk: 2000,
+            bAtk: 0,
+            pbAtk: 0,
+            wepRarity: 'epic',
+            pierce: 5,
+            pmPierce: 5,
+            pmAtk: 300,
+            tDmg: 0,
+            bDmg: 0,
+            eDmg: 0,
+            mrDmg: 0,
+            critRate: 50,
+            luck: 20,
+            critDmg: 125,
+        },
+        item: {
+            batkGems: 0,
+            batkGemLvl: 10,
+            mainStatGems: 0,
+            mainStatGemLvl: 10,
+        },
+        buffs: {
+            sinCritBuff: false,
+            critRateBuff: 0,
+            buffWepAtk: 0,
+            buffEDmg: 0,
+            buffDmg: 0,
+            buffPmAtk: 0,
+            debuffDmgTaken: 0,
+        }
     },
+    comparison: {
+        stats: {
+            class: 'knight',
+            dungeon: 'cdev',
+            wepAtk: 2000,
+            bAtk: 0,
+            pbAtk: 0,
+            wepRarity: 'epic',
+            pierce: 5,
+            pmPierce: 5,
+            pmAtk: 300,
+            tDmg: 0,
+            bDmg: 0,
+            eDmg: 0,
+            mrDmg: 0,
+            critRate: 50,
+            luck: 20,
+            critDmg: 125,
+        },
+        item: {
+            batkGems: 0,
+            batkGemLvl: 10,
+            mainStatGems: 0,
+            mainStatGemLvl: 10,
+        },
+        buffs: {
+            sinCritBuff: false,
+            critRateBuff: 0,
+            buffWepAtk: 0,
+            buffEDmg: 0,
+            buffDmg: 0,
+            buffPmAtk: 0,
+            debuffDmgTaken: 0,
+        }
+    }
 };
 
 export const fields = {
@@ -30,85 +85,76 @@ export const fields = {
     bDmg: 'bDmg',
     eDmg: 'eDmg',
     mrDmg: 'mrDmg',
+    critRate: 'critRate',
+    critDmg: 'critDmg',
+    luck: 'luck',
+    batkGems: 'batkGems',
+    batkGemLvl: 'batkGemLvl',
+    mainStatGems: 'mainStatGems',
+    mainStatGemLvl: 'mainStatGemLvl',
+    sinCritBuff: 'sinCritBuff',
+    critRateBuff: 'critRateBuff',
+    buffWepAtk: 'buffWepAtk',
+    buffEDmg: 'buffEDmg',
+    buffDmg: 'buffDmg',
+    buffPmAtk: 'buffPmAtk',
+    debuffDmgTaken: 'debuffDmgTaken',
 };
 
-export const classes = [
-    {
-        val: 'knight',
-        text: 'Knight',
-    },
-    {
-        val: 'wiz',
-        text: 'Wizard',
-    },
-    {
-        val: 'archer',
-        text: 'Archer',
-    },
-    {
-        val: 'thief',
-        text: 'Thief',
-    },
-    {
-        val: 'rune',
-        text: 'Runeblade',
-    },
-    {
-        val: 'zerk',
-        text: 'Berserker',
-    },
-    {
-        val: 'priest',
-        text: 'Priest',
-    },
-    {
-        val: 'hg',
-        text: 'Heavy Gunner',
-    },
-    {
-        text: 'Assassin',
-        val: 'sin',
-    },
-    {
-        val: 'sb',
-        text: 'Soul Binder',
-    },
-    {
-        val: 'striker',
-        text: 'Striker',
-    },
-];
+export const gemQuantities = {
+    0: 0,
+    1: 1,
+    2: 2,
+    3: 3,
+    4: 4,
+    5: 5,
+    6: 6,
+    7: 7,
+    8: 8,
+    9: 9,
+};
 
-export const dungeons = [
-    {
-        val: 'cdev',
-        text: 'Shadow Altar',
-    },
-    {
-        val: 'cmoc',
-        text: 'Moonlight Fortress',
-    },
-    {
-        val: 'cpap',
-        text: 'Ludibrium Clock Tower',
-    },
-    {
-        val: 'fd',
-        text: 'The Fire Dragon',
-    },
-    {
-        val: 'tdummy',
-        text: 'Training Dummy',
-    },
-];
+export const gemLevels = {
+    1: 1,
+    2: 2,
+    3: 3,
+    4: 4,
+    5: 5,
+    6: 6,
+    7: 7,
+    8: 8,
+    9: 9,
+    10: 10,
+};
 
-export const wepRarities = [
-    {
-        val: 'epic',
-        text: 'Epic',
-    },
-    {
-        val: 'legendary',
-        text: 'Legendary',
-    },
-];
+export const comparisonTypes = {
+    add: 'Add Stats',
+    replace: 'Replace All Stats'
+}
+
+export const classes = {
+    knight: 'Knight',
+    wiz: 'Wizard',
+    archer: 'Archer',
+    thief: 'Thief',
+    rune: 'Runeblade',
+    zerk: 'Berserker',
+    priest: 'Priest',
+    hg: 'Heavy Gunner',
+    sin: 'Assassin',
+    sb: 'Soul Binder',
+    striker: 'Striker',
+};
+
+export const dungeons = {
+    cdev: 'Shadow Altar',
+    cmoc: 'Moonlight Fortress',
+    cpap: 'Ludibrium Clock Tower',
+    fd: 'The Fire Dragon',
+    tdummy: 'Training Dummy',
+};
+
+export const wepRarities = {
+    epic: 'Epic',
+    legendary: 'Legendary',
+};

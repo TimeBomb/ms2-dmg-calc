@@ -7,9 +7,12 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { reducer } from './state/reducers';
 import { defaultState } from './util/constants';
+import { saveState, getState as getSavedState } from './util/stateStorage';
 
-const initialState = defaultState;
-const store = createStore(reducer, initialState);
+const store = createStore(reducer, getSavedState() || defaultState);
+store.subscribe(() => {
+    saveState(store.getState());
+});
 
 ReactDOM.render((
     <Provider store={store}>
