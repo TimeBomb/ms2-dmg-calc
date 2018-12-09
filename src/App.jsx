@@ -43,7 +43,7 @@ export default class App extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div class="floating-footer">
+                <div className="floating-footer">
                     <ComparisonCopyButton />
                     <Results />
                 </div>
