@@ -124,6 +124,10 @@ export default {
         sb: 3.40375,
     },
     critRateCap: 0.4,
+    item: {
+        varrHornsBuffAvgPmAtk: 11.5 * 8 / 24,
+        varrWingsBuffAvgPierce: 10 * 8 / 24,
+    },
     buffs: {
         sinCritBuffUptime: 17 / 60,
     },

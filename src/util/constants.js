@@ -23,6 +23,8 @@ export const defaultState = {
             batkGemLvl: 10,
             mainStatGems: 0,
             mainStatGemLvl: 10,
+            varrWingsBuff: false,
+            varrHornsBuff: false,
         },
         buffs: {
             sinCritBuff: false,
@@ -58,6 +60,8 @@ export const defaultState = {
             batkGemLvl: 10,
             mainStatGems: 0,
             mainStatGemLvl: 10,
+            varrWingsBuff: false,
+            varrHornsBuff: false,
         },
         buffs: {
             sinCritBuff: false,
@@ -99,6 +103,8 @@ export const fields = {
     buffDmg: 'buffDmg',
     buffPmAtk: 'buffPmAtk',
     debuffDmgTaken: 'debuffDmgTaken',
+    varrWingsBuff: 'varrWingsBuff',
+    varrHornsBuff: 'varrHornsBuff',
 };
 
 export const gemQuantities = {
