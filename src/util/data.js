@@ -104,7 +104,7 @@ export default {
         thief: 0.62249,
         rune: 0.62249,
         zerk: 0.62249,
-        priest: 0.48,
+        priest: 0.4704,
         hg: 0.62249,
         sin: 0.62249,
         sb: 0.5665, // TODO: Guessing, can confirm upon release
@@ -124,6 +124,7 @@ export default {
         sb: 3.40375,
     },
     critRateCap: 0.4,
+    classesWithLuck: ['sin', 'thief'], // Classes with luck main stat. Used to calculate additional crit rate
     item: {
         varrHornsBuffAvgPmAtk: 11.5 * 8 / 24,
         varrWingsBuffAvgPierce: 10 * 8 / 24,

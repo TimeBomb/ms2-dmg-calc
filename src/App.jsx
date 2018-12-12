@@ -53,6 +53,9 @@ export default class App extends React.Component {
                     <br/>***<b>Increase Damage Taken Debuff %</b> is experimental. It may or may not be slightly inaccurate. We aren't certain exactly how it interacts with Damage Buff %.
                 </div>
                 <ResetCalculatorButton />
+                <div className="fineprint">
+                    Last updated December 12th, 2018
+                </div>
             </div>
         );
     }

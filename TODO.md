@@ -1,0 +1,1 @@
+- Rework gem comparison to allow for individual gems. People can set a single gem's level+type. People can then click a "duplicate" button next to a single gem in order to add another one of that type+level.

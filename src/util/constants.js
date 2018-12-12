@@ -28,12 +28,12 @@ export const defaultState = {
         },
         buffs: {
             sinCritBuff: false,
-            critRateBuff: 0,
             buffWepAtk: 0,
             buffEDmg: 0,
             buffDmg: 0,
             buffPmAtk: 0,
             debuffDmgTaken: 0,
+            debuffDefense: 0,
         }
     },
     comparison: {
@@ -65,12 +65,12 @@ export const defaultState = {
         },
         buffs: {
             sinCritBuff: false,
-            critRateBuff: 0,
             buffWepAtk: 0,
             buffEDmg: 0,
             buffDmg: 0,
             buffPmAtk: 0,
             debuffDmgTaken: 0,
+            debuffDefense: 0,
         }
     }
 };
@@ -97,12 +97,12 @@ export const fields = {
     mainStatGems: 'mainStatGems',
     mainStatGemLvl: 'mainStatGemLvl',
     sinCritBuff: 'sinCritBuff',
-    critRateBuff: 'critRateBuff',
     buffWepAtk: 'buffWepAtk',
     buffEDmg: 'buffEDmg',
     buffDmg: 'buffDmg',
     buffPmAtk: 'buffPmAtk',
     debuffDmgTaken: 'debuffDmgTaken',
+    debuffDefense: 'debuffDefense',
     varrWingsBuff: 'varrWingsBuff',
     varrHornsBuff: 'varrHornsBuff',
 };

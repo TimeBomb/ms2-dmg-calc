@@ -8,7 +8,6 @@ export default class ItemStatForm extends React.Component {
         return <div className="buff-stats stat-form">
             <fieldset>
                 <CheckboxField label="Assassin Crit Rate Buff" name={fields.sinCritBuff} value={this.props.values[fields.sinCritBuff]} onChange={this.props.setStats} />
-                <TextField label="Crit Rate Buff %" name={fields.critRateBuff} value={this.props.values[fields.critRateBuff]} onChange={this.props.setStats} />
             </fieldset>
             <fieldset>
                 <TextField label="Weapon Attack Buff %" name={fields.buffWepAtk} value={this.props.values[fields.buffWepAtk]} onChange={this.props.setStats} />
@@ -18,6 +17,7 @@ export default class ItemStatForm extends React.Component {
             </fieldset>
             <fieldset>
                 <TextField label="Increase Damage Taken Debuff %***" name={fields.debuffDmgTaken} value={this.props.values[fields.debuffDmgTaken]} onChange={this.props.setStats} />
+                <TextField label="Decrease Defense Debuff %" name={fields.debuffDefense} value={this.props.values[fields.debuffDefense]} onChange={this.props.setStats} />
             </fieldset>
         </div>;
     }

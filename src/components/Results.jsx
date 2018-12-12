@@ -36,10 +36,12 @@ class Results extends React.Component {
         const critRate = (getCritRate({
             stats: this.props.playerStats,
             buffs: this.props.playerBuffs,
+            item: this.props.playerItem,
         }) * 100).toFixed(2);
         const comparisonCritRate = (getCritRate({
             stats: this.props.comparisonStats,
             buffs: this.props.comparisonBuffs,
+            item: this.props.comparisonItem,
         }) * 100).toFixed(2);
         const isCritSame = critRate !== comparisonCritRate;
         return (
