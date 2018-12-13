@@ -25,6 +25,10 @@ export const defaultState = {
             mainStatGemLvl: 10,
             varrWingsBuff: false,
             varrHornsBuff: false,
+            murpBuff: false,
+            mslBuff: false,
+            varrSwordBuff: false,
+            pyrrosOrbBuff: false,
         },
         buffs: {
             sinCritBuff: false,
@@ -62,6 +66,10 @@ export const defaultState = {
             mainStatGemLvl: 10,
             varrWingsBuff: false,
             varrHornsBuff: false,
+            murpBuff: false,
+            mslBuff: false,
+            varrSwordBuff: false,
+            pyrrosOrbBuff: false,
         },
         buffs: {
             sinCritBuff: false,
@@ -105,6 +113,10 @@ export const fields = {
     debuffDefense: 'debuffDefense',
     varrWingsBuff: 'varrWingsBuff',
     varrHornsBuff: 'varrHornsBuff',
+    murpBuff: 'murpBuff',
+    mslBuff: 'mslBuff',
+    varrSwordBuff: 'varrSwordBuff',
+    pyrrosOrbBuff: 'pyrrosOrbBuff',
 };
 
 export const gemQuantities = {

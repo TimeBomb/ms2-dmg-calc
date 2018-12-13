@@ -14,13 +14,22 @@ export const getDmgDealt = (player) => {
     const totalPierce = stats.pierce + (itemStats.varrWingsBuff ? data.item.varrWingsBuffAvgPierce : 0);
     const totalPmAtk = (stats.pmAtk
         + (itemStats.mainStatGems * data.gems.stat[itemStats.mainStatGemLvl] * data.mainStatToPMAtk[stats.class]))
-        * (1 + ((buffs.buffPmAtk + itemStats.varrHornsBuff ? data.item.varrHornsBuffAvgPmAtk : 0) / 100));
+        * (1 + ((
+            buffs.buffPmAtk
+            + (itemStats.varrHornsBuff ? data.item.varrHornsBuffAvgPmAtk : 0)
+            + (itemStats.murpBuff ? (data.item.murp.pmAtk[stats.dungeon] || data.item.murp.pmAtk.default) * data.item.murp.uptime : 0)
+            + (itemStats.varrSwordBuff ? data.item.varrSwordBuffPmAtk : 0)
+            + (itemStats.pyrrosOrbBuff ? data.item.pyrrosOrbBuffPmAtk : 0)
+        ) / 100));
 
     const totalDmgMultiplier = (1 + (totalDmg / 100));
     const bossDefMultiplier = 1 / (data.boss[stats.dungeon].def * (1 - (buffs.debuffDefense / 100)));
     const pierceMultiplier = (1 / Math.max(1 - (totalPierce / 100), 0.7));
     const pmPierceResisMultiplier = Math.min(1, ((1500 * (1 + (stats.pmPierce / 100)) - data.boss[stats.dungeon].pmResis) / 1500));
-    const buffMultiplier = (1 + ((buffs.buffDmg + buffs.debuffDmgTaken) / 100));
+    const buffMultiplier = (1 + ((buffs.buffDmg
+            + buffs.debuffDmgTaken
+            + (itemStats.mslBuff ? (data.item.msl.dmg[stats.dungeon] || data.item.msl.dmg.default) * data.item.msl.uptime : 0)
+        ) / 100));
 
     return totalWepAtk
         * totalPmAtk

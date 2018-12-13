@@ -8,6 +8,12 @@ export default class ItemStatForm extends React.Component {
         return (
             <div className="item-stats stat-form">
                 <fieldset>
+                    <CheckboxField label="MSL Weapon (Average +Damage)****" name={fields.mslBuff} value={this.props.values[fields.mslBuff]} onChange={this.props.setStats} />
+                    <CheckboxField label="Murp Weapon (Average +Phys/Mag Atk)" name={fields.murpBuff} value={this.props.values[fields.murpBuff]} onChange={this.props.setStats} />
+                    <CheckboxField label="Pyrros Fard Orb Buff (Average +Phys/Mag Atk)" name={fields.pyrrosOrbBuff} value={this.props.values[fields.pyrrosOrbBuff]} onChange={this.props.setStats} />
+                    <CheckboxField label="Varrekant's Longsword Buff (Average +Phys/Mag Atk)" Atk name={fields.varrSwordBuff} value={this.props.values[fields.varrSwordBuff]} onChange={this.props.setStats} />
+                </fieldset>
+                <fieldset>
                     <CheckboxField label="Varrakent's Wings (Average +Piercing)" name={fields.varrWingsBuff} value={this.props.values[fields.varrWingsBuff]} onChange={this.props.setStats} />
                     <CheckboxField label="Varrakent's Horns (Average +Phys/Mag Atk)" name={fields.varrHornsBuff} value={this.props.values[fields.varrHornsBuff]} onChange={this.props.setStats} />
                 </fieldset>

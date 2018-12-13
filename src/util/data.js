@@ -128,6 +128,26 @@ export default {
     item: {
         varrHornsBuffAvgPmAtk: 11.5 * 8 / 24,
         varrWingsBuffAvgPierce: 10 * 8 / 24,
+        msl: {
+            uptime: 20/24,
+            dmg: {
+                default: 4.5,
+                cdev: 4.5 * 4,
+                cmoc: 4.5 * 4,
+                cpap: 4.5 * 4,
+            }
+        },
+        murp: {
+            uptime: 11/24,
+            pmAtk: {
+                default: 9,
+                cdev: 9 * 4,
+                cmoc: 9 * 4,
+                cpap: 9 * 4,
+            },
+        },
+        pyrrosOrbBuffPmAtk: 22 * 30 / 45,
+        varrSwordBuffPmAtk: 17 * 30 / 45,
     },
     buffs: {
         sinCritBuffUptime: 17 / 60,

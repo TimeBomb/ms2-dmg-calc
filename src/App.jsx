@@ -51,6 +51,7 @@ export default class App extends React.Component {
                     *<b>Bonus Attack</b> is experimental. The weapon multipliers may or may not be slightly inaccurate.
                     <br/>**<b>Critical Rate</b> is experimental. The datamined algorithm may or may not be slightly inaccurate.
                     <br/>***<b>Increase Damage Taken Debuff %</b> is experimental. It may or may not be slightly inaccurate. We aren't certain exactly how it interacts with Damage Buff %.
+                    <br/>****<b>MSL weapon physical/magical damage buff exact calculation is unknown.</b> It's unknown exactly what "physical/magical damage" means. We make the assumption it acts as a raw damage buff, but it may just act as a hidden modifier to phys/mag attack.
                 </div>
                 <ResetCalculatorButton />
                 <div className="fineprint">
