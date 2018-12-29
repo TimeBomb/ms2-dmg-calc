@@ -146,8 +146,9 @@ export default {
                 cpap: 9 * 4,
             },
         },
-        pyrrosOrbBuffPmAtk: 22 * 30 / 45,
-        varrSwordBuffPmAtk: 17 * 30 / 45,
+        namedEpic2HBuffPmAtk: 22 * 30 / 45,
+        namedEpicMHBuffPmAtk: 17 * 30 / 45,
+        namedEpic1HBuffPmAtk: 11 * 30 / 45,
     },
     buffs: {
         sinCritBuffUptime: 17 / 60,

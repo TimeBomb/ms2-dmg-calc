@@ -18,8 +18,9 @@ export const getDmgDealt = (player) => {
             buffs.buffPmAtk
             + (itemStats.varrHornsBuff ? data.item.varrHornsBuffAvgPmAtk : 0)
             + (itemStats.murpBuff ? (data.item.murp.pmAtk[stats.dungeon] || data.item.murp.pmAtk.default) * data.item.murp.uptime : 0)
-            + (itemStats.varrSwordBuff ? data.item.varrSwordBuffPmAtk : 0)
-            + (itemStats.pyrrosOrbBuff ? data.item.pyrrosOrbBuffPmAtk : 0)
+            + (itemStats.namedEpic1HBuff ? data.item.namedEpic1HBuffPmAtk : 0)
+            + (itemStats.namedEpic2HBuff ? data.item.namedEpic2HBuffPmAtk : 0)
+            + (itemStats.namedEpicMHBuff ? data.item.namedEpicMHBuffPmAtk : 0)
         ) / 100));
 
     const totalDmgMultiplier = (1 + (totalDmg / 100));

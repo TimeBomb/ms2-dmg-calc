@@ -27,8 +27,9 @@ export const defaultState = {
             varrHornsBuff: false,
             murpBuff: false,
             mslBuff: false,
-            varrSwordBuff: false,
-            pyrrosOrbBuff: false,
+            namedEpic1HBuff: false,
+            namedEpic2HBuff: false,
+            namedEpicMHBuff: false,
         },
         buffs: {
             sinCritBuff: false,
@@ -68,8 +69,9 @@ export const defaultState = {
             varrHornsBuff: false,
             murpBuff: false,
             mslBuff: false,
-            varrSwordBuff: false,
-            pyrrosOrbBuff: false,
+            namedEpic1HBuff: false,
+            namedEpic2HBuff: false,
+            namedEpicMHBuff: false,
         },
         buffs: {
             sinCritBuff: false,
@@ -115,8 +117,9 @@ export const fields = {
     varrHornsBuff: 'varrHornsBuff',
     murpBuff: 'murpBuff',
     mslBuff: 'mslBuff',
-    varrSwordBuff: 'varrSwordBuff',
-    pyrrosOrbBuff: 'pyrrosOrbBuff',
+    namedEpic1HBuff: 'namedEpic1HBuff',
+    namedEpic2HBuff: 'namedEpic2HBuff',
+    namedEpicMHBuff: 'namedEpicMHBuff',
 };
 
 export const gemQuantities = {

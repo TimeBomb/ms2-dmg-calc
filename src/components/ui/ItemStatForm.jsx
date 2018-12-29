@@ -10,8 +10,9 @@ export default class ItemStatForm extends React.Component {
                 <fieldset>
                     <CheckboxField label="MSL Weapon (Average +Damage)****" name={fields.mslBuff} value={this.props.values[fields.mslBuff]} onChange={this.props.setStats} />
                     <CheckboxField label="Murp Weapon (Average +Phys/Mag Atk)" name={fields.murpBuff} value={this.props.values[fields.murpBuff]} onChange={this.props.setStats} />
-                    <CheckboxField label="Pyrros Fard Orb Buff (Average +Phys/Mag Atk)" name={fields.pyrrosOrbBuff} value={this.props.values[fields.pyrrosOrbBuff]} onChange={this.props.setStats} />
-                    <CheckboxField label="Varrekant's Longsword Buff (Average +Phys/Mag Atk)" Atk name={fields.varrSwordBuff} value={this.props.values[fields.varrSwordBuff]} onChange={this.props.setStats} />
+                    <CheckboxField label="Named Epic 2H Orb Buff (Average +Phys/Mag Atk)" name={fields.namedEpic2HBuff} value={this.props.values[fields.namedEpic2HBuff]} onChange={this.props.setStats} />
+                    <CheckboxField label="Named Epic 1H Buff (Average +Phys/Mag Atk)" Atk name={fields.namedEpic1HBuff} value={this.props.values[fields.namedEpic1HBuff]} onChange={this.props.setStats} />
+                    <CheckboxField label="Named Epic Main-hand Buff (Average +Phys/Mag Atk)" Atk name={fields.namedEpicMHBuff} value={this.props.values[fields.namedEpicMHBuff]} onChange={this.props.setStats} />
                 </fieldset>
                 <fieldset>
                     <CheckboxField label="Varrakent's Wings (Average +Piercing)" name={fields.varrWingsBuff} value={this.props.values[fields.varrWingsBuff]} onChange={this.props.setStats} />

@@ -55,7 +55,7 @@ export default class App extends React.Component {
                 </div>
                 <ResetCalculatorButton />
                 <div className="fineprint">
-                    Last updated December 12th, 2018
+                    Last updated December 28th, 2018
                 </div>
             </div>
         );
