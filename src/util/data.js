@@ -7,7 +7,6 @@ export default {
             pmResis: 120,
             critEvasion: 50,
             evasion: 97,
-            luck: 0,
         },
         cdev: {
             name: 'Devorak',
@@ -15,7 +14,6 @@ export default {
             pmResis: 249,
             critEvasion: 50,
             evasion: 98,
-            luck: 0,
         },
         cmoc: {
             name: 'Captain Moc',
@@ -23,7 +21,6 @@ export default {
             pmResis: 249,
             critEvasion: 50,
             evasion: 98,
-            luck: 0,
         },
         cpap: {
             name: 'Papulatus',
@@ -31,7 +28,13 @@ export default {
             pmResis: 249,
             critEvasion: 50,
             evasion: 101,
-            luck: 0,
+        },
+        irog: {
+            name: 'Infernog',
+            def: 567,
+            pmResis: 150,
+            critEvasion: 90,
+            evasion: 130,
         },
         tdummy: {
             name: 'Training Dummy',
@@ -39,7 +42,6 @@ export default {
             pmResis: 90,
             critEvasion: 50,
             evasion: 87,
-            luck: 0
         }
     },
     petBonusAtkMultiplier: 0.4, // Amount of pet bonus atk that affects your bonus atk, came from Saintone

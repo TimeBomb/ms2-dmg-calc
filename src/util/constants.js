@@ -172,6 +172,7 @@ export const dungeons = {
     cmoc: 'Moonlight Fortress',
     cpap: 'Ludibrium Clock Tower',
     fd: 'The Fire Dragon',
+    irog: 'Infernog',
     tdummy: 'Training Dummy',
 };
 
