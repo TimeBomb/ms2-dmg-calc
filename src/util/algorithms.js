@@ -55,6 +55,6 @@ export const getCritRate = (player) => {
     const itemStats = player.item;
     const finalLuck = stats.luck + (data.classesWithLuck.includes(stats.class) ? itemStats.mainStatGems * data.gems.stat[itemStats.mainStatGemLvl] : 0);
     const critRate = ((finalLuck * data.critRateCoefficient[stats.class]) + (stats.critRate * 5.3)) / (data.boss[stats.dungeon].critEvasion * 2) * 0.015;
-    const additionalCritRate = (buffs.sinCritBuff ? data.buffs.sinCritBuffUptime : 0);
-    return Math.min(critRate + additionalCritRate, data.critRateCap);
+    const additionalCritRate = (buffs.sinCritBuff ? (data.buffs.sinCritBuffUptimePerMin + (60 - data.buffs.sinCritBuffUptimePerMin) * critRate) / 60 : 0);
+    return additionalCritRate ? critRate + additionalCritRate : Math.min(critRate, data.critRateCap);
 }
