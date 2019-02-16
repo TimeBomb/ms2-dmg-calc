@@ -153,6 +153,6 @@ export default {
         namedEpic1HBuffPmAtk: 11 * 30 / 45,
     },
     buffs: {
-        sinCritBuffUptime: 17 / 60,
+        sinCritBuffUptimePerMin: 17,
     },
 };
